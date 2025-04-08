@@ -10,7 +10,6 @@ def get():
 
 
 @app.route('/post', methods=['POST'])
-
 def post():
     json_data = request.get_json()
     number = json_data['number']
