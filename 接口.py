@@ -9,7 +9,8 @@ def get():
 #http://127.0.0.1:9000/get?number=123&word=hello
 
 
-@app.route('/post')
+@app.route('/post', methods=['POST'])
+
 def post():
     json_data = request.get_json()
     number = json_data['number']
