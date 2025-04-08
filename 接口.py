@@ -9,7 +9,7 @@ def get():
 #http://127.0.0.1:9000/get?number=123&word=hello
 
 
-@app.route('/post', methods=['POST'])
+@app.route('/post', methods=['POST'])#falsk应用在执行要用post方法才能在postman中运行出来
 def post():
     json_data = request.get_json()
     number = json_data['number']
